@@ -129,7 +129,7 @@ sub Preprocess {
     open $CSRC, ">", $tmpfile or die $!;
     print $CSRC $code;
     close $CSRC;
-    open $PROCESSED, "$cpp $tmpfile |" or die $!;
+    open $PROCESSED, "$cpp \"$tmpfile\" |" or die $!;
     $code = join '', <$PROCESSED>;
     close $PROCESSED;
     unlink $tmpfile;

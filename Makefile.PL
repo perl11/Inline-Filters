@@ -9,7 +9,7 @@ WriteMakefile(
     Inline    => 0.42,
     Inline::C => 0.76,
   },
-  clean => {FILES => '_Inline/'},
+  clean => {FILES => ['_Inline/', '"_In line/"']},
   ($ExtUtils::MakeMaker::VERSION gt '6.46' ?
    ('META_MERGE'  =>
     {

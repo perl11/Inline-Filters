@@ -2,10 +2,15 @@ use strict;
 use warnings;
 use diagnostics;
 use Config;
+BEGIN {
+    mkdir '_In line';
+}
 
 print "1..4\n";
 
+
 use Inline C => Config =>
+    DIRECTORY  => '_In line', #space in path test
     #BUILD_NOISY => 1,
     FORCE_BUILD => 1,
     CCFLAGS     => $Config{ccflags};
