@@ -5,6 +5,7 @@ WriteMakefile(
   VERSION_FROM => 'Filters.pm',
   ABSTRACT => 'Common source code filters for Inline Modules',
   AUTHOR => 'Neil Watkiss, Reini Urban, Will Braswell',
+  LICENSE => 'perl_5',
   PREREQ_PM => {
     Inline    => 0.42,
     Inline::C => 0.76,
