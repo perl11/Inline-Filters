@@ -10,6 +10,7 @@ WriteMakefile(
     Inline    => 0.42,
     Inline::C => 0.76,
   },
+  # note: the space is intentional to test spaces in paths
   clean => {FILES => ['_Inline/', '"_In line/"']},
   ($ExtUtils::MakeMaker::VERSION gt '6.46' ?
    ('META_MERGE'  =>

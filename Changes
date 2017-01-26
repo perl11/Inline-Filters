@@ -1,11 +1,15 @@
 Revision history for Perl extension Inline::Filters.
 
+0.20 2017-01-26 (rurban)
+	- Add missing LICENSE meta (PR #4) - manwar
+        - Improve t/z_kwalitee.t
+
 0.19 2017-01-24 (wbraswell)
 	- Enable CLEAN_AFTER_BUILD Argument In Preprocess Filter
-        For Compatibility With gdb For Inline::C(PP) Debugging
+        For compatibility with gdb for Inline::C(PP) gebugging
 
 0.18 2016-09-07 (rurban)
-	- Allow a space in paths (#3) - bulk88
+	- Allow a space in paths (PR #3) - bulk88
 
 0.17 2015-06-23 (rurban)
 	- added CPPFLAGS by wbraswell, with Inline::C 0.76 only
